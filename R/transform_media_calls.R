@@ -1,4 +1,4 @@
-#' @title Transforms All Media Calls in Rmd File to Rmarkdown Syntax
+#' @title Transforms All Media Calls in Rmd File to Rmarkdown \code{![]()} Syntax
 #' @description Prints all media calls found in Rmd file into the console as originally found and in Rmarkdown \code{![]()} format to be available for copy and paste operations.
 #'
 #' @param rmd_file  An .Rmd path/filename provided as a character string.

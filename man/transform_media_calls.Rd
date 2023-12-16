@@ -2,7 +2,7 @@
 % Please edit documentation in R/transform_media_calls.R
 \name{transform_media_calls}
 \alias{transform_media_calls}
-\title{Transforms All Media Calls in Rmd File to Rmarkdown Syntax}
+\title{Transforms All Media Calls in Rmd File to Rmarkdown \code{![]()} Syntax}
 \usage{
 transform_media_calls(rmd_file)
 }
