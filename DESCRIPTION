@@ -1,0 +1,32 @@
+Package: xtractr
+Title: Helper Functions for Extracting Textual Content from Rmd Files
+Version: 0.0.0.9000
+Authors@R: person(given = "Dan",
+            family = "Swart",
+            role = c("aut", "cre"),
+            email = "danswartcpa@gmail.com", 
+            comment = c(ORCID = "0009-0000-6802-3979"))
+Maintainer: Dan Swart <danswartcpa@gmail.com>
+Description: Helper functions to extract textual content from Rmd files, particularly slides.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: 
+    magick (>= 2.8.1),
+    magrittr (>= 2.0.3),
+    pdftools (>= 3.4.0),
+    renderthis (>= 0.2.1),
+    stringr (>= 1.5.1),
+    tools (>= 4.3.0),
+    xml2 (>= 1.3.6)
+Config/testthat/edition: 3
+LazyData: true
+URL: https://github.com/danswart/xtractr
+BugReports: https://github.com/danswart/xtractr/issues
+
