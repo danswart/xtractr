@@ -1,5 +1,5 @@
 Package: xtractr
-Title: Helper Functions for Extracting Textual Content from Rmd Files, Including Slide Decks
+Title: Helper Functions for Extracting Textual Content from Rmd Files, Particularly Slide Decks
 Version: 0.0.0.9000
 Authors@R: person(given = "Dan",
             family = "Swart",
@@ -7,7 +7,7 @@ Authors@R: person(given = "Dan",
             email = "danswartcpa@gmail.com", 
             comment = c(ORCID = "0009-0000-6802-3979"))
 Maintainer: Dan Swart <danswartcpa@gmail.com>
-Description: Helper functions to extract textual content from Rmd files, including slides.
+Description: Helper functions to extract textual content from Rmd files, particularly slide decks.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
