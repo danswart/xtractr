@@ -1,7 +1,8 @@
 
 # xtractr
 
-<img src="inst/extdata/xtractrhexSticker-royalblue.png" width="25%" height="25%">
+<img src="inst/extdata/xtractr-hexSticker-royalblue.png" width="25%" height="25%">
+<img src="inst/extdata/xtractr-hexSticker-gold.png" width="25%" height="25%">
 
 The goal of xtractr is to ...
 
