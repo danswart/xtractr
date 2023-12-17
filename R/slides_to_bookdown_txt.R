@@ -54,7 +54,7 @@ slides_to_bookdown_txt <- function(rmd_file = "sample-slides-copy.rmd", txt_outp
   writeLines(modified_text, con = txt_output_file)
 
   # Confirmation message
-  cat("Text has been concatenated into one continuous line with no more than two spaces between words in", txt_output_file, "\n")
+  cat("Slide file has been converted into text and stored in an Rmd file with no more than two spaces between words in", txt_output_file, "\n")
 }
 
 
