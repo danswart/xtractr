@@ -3,7 +3,7 @@
 export("%>%")
 export(get_media_calls)
 export(lmt_gif_loops)
-export(slides_to_bookdown_txt)
+export(slides_to_bookdown)
 export(transform_media_calls)
 export(xtract_gifs_optional_save)
 export(xtract_imgs_optional_save)
