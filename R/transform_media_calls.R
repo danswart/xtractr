@@ -1,5 +1,5 @@
-#' @title Transforms All Media Calls in Rmd File to Rmarkdown \code{![]()} Syntax
-#' @description Prints all media calls found in Rmd file into the console as originally found and in Rmarkdown \code{![]()} format to be available for copy and paste operations.
+#' @title Transforms All Media Calls in Rmd File to HTML Syntax
+#' @description Prints all media calls found in Rmd file into the console as originally found and in HTML \code{img src="path/filename" height=>} format to be available for copy and paste operations.  Media calls in slides shows that are in any format are transformed and put into a format suitable to be copied into a bookdown document.
 #'
 #' @param rmd_file  An .Rmd path/filename provided as a character string.
 #'
@@ -10,21 +10,21 @@
 #' transform_media_calls(rmd_file)
 #' @export
 transform_media_calls <- function(rmd_file) {
-
   # Extract media calls from the Rmarkdown file:
   media_calls <- xtractr::get_media_calls(rmd_file)
 
-  # Remove any 'url(' characters if present and format as ![](path)
-  transformed_calls <- gsub("url\\((.*?)\\)", "![](\\1)", media_calls)
+  # Transform media calls from 'url(...)' format to '<img src="..." height=200>'
+  transformed_calls1 <- gsub("url\\((.*?)\\)", "<img src=\"\\1\" height=200>", media_calls)
 
-  # Remove 'url(' characters at the beginning of the string if present
-  transformed_calls <- gsub("^url\\((.*?)$", "![](\\1)", transformed_calls)
+  # Transform media calls from '![](...)' format to '<img src="..." height=200>'
+  transformed_calls2 <- gsub("!\\[.*?\\]\\((.*?)\\)", "<img src=\"\\1\" height=200>", transformed_calls1)
 
-  # Add ![]() format to media calls that don't have 'url(' prefix
-  transformed_calls[!grepl("!\\[.*?\\]\\(.*?\\)", transformed_calls)] <-
-    paste0("![](", transformed_calls[!grepl("!\\[.*?\\]\\(.*?\\)", transformed_calls)], ")")
+  # Handle any remaining calls that are plain paths (e.g., 'path/filename')
+  # Assuming these are direct links to images or other media
+  transformed_calls3 <- ifelse(grepl("<img src=", transformed_calls2),
+                               transformed_calls2,
+                               paste0("<img src=\"", transformed_calls2, "\" height=200>"))
 
-  # Return the transformed media calls to console for further copy-paste operations
-  return(transformed_calls)
+  # Print transformed_calls3 to console
+  cat(transformed_calls3, sep = "\n")
 }
-

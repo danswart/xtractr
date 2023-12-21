@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(xtract)
+library(xtractr)
 
-test_check("xtract")
+test_check("xtractr")

@@ -2,7 +2,7 @@
 % Please edit documentation in R/transform_media_calls.R
 \name{transform_media_calls}
 \alias{transform_media_calls}
-\title{Transforms All Media Calls in Rmd File to Rmarkdown \code{![]()} Syntax}
+\title{Transforms All Media Calls in Rmd File to HTML Syntax}
 \usage{
 transform_media_calls(rmd_file)
 }
@@ -13,7 +13,7 @@ transform_media_calls(rmd_file)
 Character vector prints in the console
 }
 \description{
-Prints all media calls found in Rmd file into the console as originally found and in Rmarkdown \code{![]()} format to be available for copy and paste operations.
+Prints all media calls found in Rmd file into the console as originally found and in HTML \code{img src="path/filename" height=>} format to be available for copy and paste operations.  Media calls in slides shows that are in any format are transformed and put into a format suitable to be copied into a bookdown document.
 }
 \examples{
 rmd_file = system.file("extdata", "sample-slides.rmd", package = "xtractr")

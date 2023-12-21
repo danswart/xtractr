@@ -6,6 +6,8 @@
 #' @param rmd_file   An .Rmd path/filename provided as a character string.  Default value = "sample-slides.Rmd"
 #' @param txt_output_file An Rmd path/filename provided as a character string.  Default value = "sample-slides-to-bookdown.Rmd"
 #'
+#'@param save_to_file A logical vector,provided as a character string, indicating user request to write a new file to current working directory.  Default value = "FALSE"
+#'
 #' @return  An R object named 'modified_text' which is (optionally) written to a new Rmd file, suitable for editing in bookdown.  New file is created in current working directory.
 #'
 #' @import renderthis
@@ -14,7 +16,7 @@
 #'
 #' @examples
 #'
-#'#' \dontrun{
+#' \dontrun{
 #'    slides_to_bookdown(rmd_file) # prints modified text to console
 #'    slides_to_bookdown("sample-slides.rmd", "sample-slides-to-bookdown.rmd", save_to_file = TRUE)
 #'}
