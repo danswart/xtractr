@@ -8,6 +8,7 @@
 #' @examples
 #' rmd_file = system.file("extdata", "sample-slides.rmd", package = "xtractr")
 #' transform_media_calls(rmd_file)
+#'
 #' @export
 transform_media_calls <- function(rmd_file) {
   # Extract media calls from the Rmarkdown file:

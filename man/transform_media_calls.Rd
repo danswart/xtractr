@@ -18,4 +18,5 @@ Prints all media calls found in Rmd file into the console as originally found an
 \examples{
 rmd_file = system.file("extdata", "sample-slides.rmd", package = "xtractr")
 transform_media_calls(rmd_file)
+
 }
