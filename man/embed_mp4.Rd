@@ -37,6 +37,3 @@ embed_mp4("path/to/video.mp4")
 
 
 }
-\seealso{
-\code{\link{htmltools::HTML}}, \code{\link{cat}}, \code{\link{writeLines}}
-}

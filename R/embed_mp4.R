@@ -30,10 +30,6 @@
 #' }
 #'
 #'
-#' @seealso \code{\link{htmltools::HTML}}, \code{\link{cat}}, \code{\link{writeLines}}
-#'
-#'
-#'
 #' @export
 embed_mp4 <- function(mp4_path, output_file = NULL) {
   html_code <- paste0(

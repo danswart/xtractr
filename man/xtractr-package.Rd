@@ -4,9 +4,9 @@
 \name{xtractr-package}
 \alias{xtractr}
 \alias{xtractr-package}
-\title{xtractr: Helper Functions for Extracting Textual Content from Rmd Files, Particularly Slide Decks}
+\title{xtractr: Helper Functions for Creating Presentation Slides and Bookdown Projects Including Extracting & Embedding Textual Content To and From Rmd Files}
 \description{
-Helper functions to extract textual content from Rmd files, particularly slide decks.
+This package contains helper functions for creating presentation slides and bookdown projects including extracting & embedding textual content to and from Rmd files.
 }
 \seealso{
 Useful links:
