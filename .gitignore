@@ -102,6 +102,7 @@ _freeze/
 
 # Rendered output (be selective)
 *.html
+!header.html       # Excepton - let this one through to repo
 !vignettes/*.html  # Exception - keep vignette HTML
 .Rproj.user
 .quarto
