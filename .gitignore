@@ -100,12 +100,12 @@ Thumbs.db
 _freeze/
 
 
+
 # Rendered output (be selective)
+
 *.html
-write("\n# Allow specific html file\n!header.html",
-      file = ".gitignore",
-      append = TRUE)
-!header.html       # Excepton - let this one through to repo
-!vignettes/*.html  # Exception - keep vignette HTML
-.Rproj.user
-.quarto
+!header.html
+!vignettes/*.html
+!giscus.html
+
+
